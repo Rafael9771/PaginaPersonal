@@ -1,136 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Pagina Personal</title>
+    <meta charset="UTF-8">
+    <title>Pagina Personal</title>
 </head>
-<body>
+<body background="IMG/mar.jpg">
     <style> 
-
-nav{
+        nav{
             position:relative;
             margin:auto;
-            width:100%;
+            /*width:100%;*/
             height:auto;
             background:black;
+            opacity: 0.6;
+            width: 1400px;
+            border-radius: 20px;
+        }
+        #quienes{
+            opacity: 0.6;
+           /* display: none;*/
+        }
+        #email{
+            border-radius: 20px;
         }
 
+        #hola{
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+        }
+        .d{
+           /* background-image: url(IMG/divs.jpg);*/
+
+           background-color: #4CF2E8;
+            background-size: 1000px 250px;
+            border-radius: 80px 20px;
+            margin-bottom: 100px;
+
+
+        }
         nav ul{
             position:relative;
             margin:auto;
             width:70%;
             text-align: center;
         }
-
         nav ul li{
             display:inline-block;
             width:12%;
             line-height: 50px;
             list-style: none;
         }
-
         nav ul li a{
             color:white;
             text-decoration: none;
+            opacity: 0.5;
         }
-
-        section{
-            position: relative;
-            margin: auto;
-            width:400px;
-        }
-
-        section h1{
-            position: relative;
-            margin: auto;
-            padding:10px;
-            text-align: center;
-        }
-
-        section form{
-            position:relative;
-            margin:auto;
-            width:400px;
-        }
-
-        section form input{
-            display:inline-block;
-            padding:10px;
-            width:100%;
-            margin:5px;
-        }
-
-        p{
+        #quienes {
             display: inline-block;
             padding: 10px;
-            height: 500px;
-            width: 100%;
-            margin: 5px;
-        }
-        section form select{
-            display:inline-block;
-            padding:10px;
-            width:95%;
-            margin:5px;
+            height: 250px;
+            width: 960px;
+            
+            
         }
 
-        section form input#usuarioRegistro{
-            text-transform: lowercase;
-        }
-
-        section form input#descripcionProyectoAlumno{
-            height: 200px;
-        }
-
-        section form input[type="submit"]{
-            position:relative;
-            margin:20px auto;
-            left:1.5%;
-
+        .bienvenido{
+             margin: auto;
+            width: auto;
 
         }
 
+        
 
-        table{
-            position:relative;
-            margin:auto;
-            width:100%;
-            left:-10%;
+        #quienes p{
+            display: inline-block;
+            padding: 10px;
+            height: 150px       ;
+            width: 960px;
+            
+            
         }
 
+        h1 span {
+    position:absolute;
+    right:0;
+    width:0.1;
+    background: #AEF1F5;
+    border-left: 1px solid #000;
+    animation: escribir 2s steps(30) infinite alternate;
+}
+
+        @keyframes escribir {
+            from { width: 100% }
+            to { width:10% }
+        }
+
+
+        h1{
+            
+           position: relative;
+               background: #AEF1F5;
+    
+
+        }
         table thead tr th{
             padding:10px;
         }
-
         table tbody tr td{
             padding:10px;
         }
-
-
 </style>
 
+<script src="jQuery/jQuery1.6.3.js"></script>
+<script>    
 
-    <nav>	
+    
 
- <ul>	
-		<li> <a href="#QS">¿Quienes somos?</a> </li>
-		<li> <a href="#AM">Acerca de</a> </li>
-    	<li> <a href="#N">Noticias</a> </li>
-        <li> <a href="#C">Contacto</a> </li>
+    $(document).ready(function(){
+
+        $("nav ul li a").mouseover(function() {
+            $(this).animate({
+
+              opacity:1
+
+            }, 250);
+        })  
+        
+
+
+        $("nav ul li a").mouseout(function() {
+            $(this).animate({
+
+              opacity:0.5
+
+            }, 250);
+        })  
+
+        $(function(){ 
+    function show_popup(){ 
+        
+            $("#welcome").animate({
+
+              opacity:0.5
+
+            }, 500);
+            $("#welcome").animate({
+
+              opacity:1
+
+            }, 500);
+      
+    }; 
+    setInterval(show_popup, 500); // 5 seconds 
+});
+
+        $("#quien").click(function(){
+          /*  $("#quienes h2").hide();
+            $("#quienes p").hide();*/
+            $("#quienes #QS").hide();
+            $("#quienes #QS").slideToggle(600);
+        });
+
+        $("#acerca").click(function(){
+            /*$("#quienes h2").hide();
+            $("#quienes p").hide();*/
+            $("#quienes #AM").hide();
+            $("#quienes #AM").slideToggle(600);
+        });
+
+        $("#noticias").click(function(){
+           /* $("#quienes h2").hide();
+            $("#quienes p").hide();*/
+            $("#quienes #N").hide();
+            $("#quienes #N").slideToggle(600);
+        });
+
+        $("#contacto").click(function(){
+           /* $("#quienes h2").hide();
+            $("#quienes p").hide();*/
+            $("#quienes #C").hide();
+            $("#quienes #C").slideToggle(600);
+        });
+
+
+    });  
+
+        
+</script>
+    <nav>   
+
+ <ul>   
+        <li> <a href="index.html" id="ini" class="nav">Inicio</a> </li>
+        <li> <a href="#QS" id="quien" class="nav">¿Quienes somos?</a> </li>
+        <li> <a href="#AM" id="acerca" class="nav">Acerca de</a> </li>
+        <li> <a href="#N" id="noticias" class="nav">Noticias</a> </li>
+        <li> <a href="#C" id="contacto" class="nav">Contacto</a> </li>
  </ul>
 </nav>
-    
-    
-<h2 id="QS">¿Quien soy?</h2>
-	<p   >Soy un estudiante de ingeniería en sistemas computacionales, actualmente enfocado en desarrollo de software,<br>con ganas de expandir mis conocimientos en esta área. Interesado en aprender nuevos lenguajes y técnicas de programación.</p>
+<center>
+    <div class="bienvenido">   
+    <h1 id="welcome"> BIENVENIDO<span>&#160;</span></h1>
+    </div>
+</center>
 
-<h2 id="AM">¿Acerca de mi?</h2>
-    <p  >Me gusta programar y aprender diferente lenguajes o formas de programación.<br>Me gusta investigar y conocer sobre nuevas tecnologias y ver presentaciones sobre lo mas nuevo anunciado. <br> Mis pasatiempos favoritos son jugar basketball en las tardes con mis amigos y dibujar. </p>
+    <div id="quienes"> 
+<div class="d">   
+<h2 class="QS" id="QS"> <center> ¿Quien soy?</center></h2>
+    <p  class="QS" >Soy un estudiante de ingeniería en sistemas computacionales, actualmente enfocado en desarrollo de software,<br>con ganas de expandir mis conocimientos en esta área. Interesado en aprender nuevos lenguajes y técnicas de programación. </p>
 
-<h2 id="N">¿Noticias?</h2>
-    <p  >Actualmente me mude a ciudad de mexico  consegui un cuarto barato cerca de parque delta. <br> Las dos primeras semanas estuve enviando curriculums para conseguir mis residencias profesionales. <br> Actualmente consegui dar mis recidencias en ISSIRMAX me queda a 40 minutos caminando de mi departamento y estoy aprendiendo mas sobre desarrollo web.</p>
-<h2 id="C">¿Contacto?</h2>
-    <p  > Email:<a href="#">rafael.ramosmoreno97@gmail.com</a> <br> Linkedln: <a href="#">Rafael Ramos Moreno</a> </p>
+</div>
+<!--img src="IMG/hola.gif" id="hola"-->
+<div class="d">
+<h2 id="AM" class="AM"><center>¿Acerca de mi?</center></h2>
+    <p  class="AM">Me gusta programar y aprender diferente lenguajes o formas de programación.<br>Me gusta investigar y conocer sobre nuevas tecnologias y ver presentaciones sobre lo mas nuevo anunciado. <br> Mis pasatiempos favoritos son jugar basketball en las tardes con mis amigos y dibujar. </p>
+</div>
+<div class="d">
+<h2 id="N" class="N"><center>¿Noticias?</center></h2>
+    <p  class="N">Actualmente me mude a ciudad de mexico  consegui un cuarto barato cerca de parque delta. <br> Las dos primeras semanas estuve enviando curriculums para conseguir mis residencias profesionales. <br> Actualmente consegui dar mis recidencias en ISSIRMAX me queda a 40 minutos caminando de mi departamento y estoy aprendiendo mas sobre desarrollo web.</p>
+</div>
+<div class="d">
+<h2 id="C" class="C"><center>¿Contacto?</center></h2>
+    <p  class="C"> Email:<a href="mailto:rafael.ramosmoreno97@gmail.com">rafael.ramosmoreno97@gmail.com</a> <br> Linkedln: <a href="https://mx.linkedin.com/in/rafael-ramos-moreno-426b12123?trk=people-guest_profile-result-card_result-card_full-click" target="_blank">Rafael Ramos Moreno</a> <br>  
+        <img src="IMG/email.gif" id="email"> </p>
+    </div>
+    </div>
+
 
 </body>
 </html>
