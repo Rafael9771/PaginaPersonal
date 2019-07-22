@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Pagina Personal</title>
+    <link rel="stylesheet" href="animate.css">
+    <script src="jQuery/jQuery1.6.3.js"></script>
 </head>
 <body background="IMG/mar.jpg">
     <style> 
@@ -16,10 +18,7 @@
             width: 1400px;
             border-radius: 20px;
         }
-        #quienes{
-            opacity: 0.6;
-           /* display: none;*/
-        }
+        
         #email{
             border-radius: 20px;
         }
@@ -36,13 +35,25 @@
         }
         .d{
            /* background-image: url(IMG/divs.jpg);*/
+           display: inline-block;
+           margin-top: 1px;
             font-family: arial;
            background-color: #4CF2E8;
             background-size: 1000px 250px;
             border-radius: 80px 20px;
             margin-bottom: 100px;
+            margin-right: 1px;
+            font-weight: bold;
 
 
+        }
+
+        #AM{
+            width: 850px;
+        }
+
+        #Co{
+            width: 500px;
         }
         nav ul{
             position:relative;
@@ -66,15 +77,13 @@
             padding: 10px;
             height: 250px;
             width: 960px;
+            opacity: 0.6;
+
             
             
         }
 
-        .bienvenido{
-             margin: auto;
-            width: auto;
-
-        }
+       
 
         
 
@@ -87,14 +96,15 @@
             
         }
 
-        h1 span {
+     /*h1 span {
+            border-radius: 20px;
     position:absolute;
     right:0;
     width:0.1;
     background: #AEF1F5;
     border-left: 1px solid #000;
     animation: escribir 2s steps(30) infinite alternate;
-}
+}*/
 
         @keyframes escribir {
             from { width: 100% }
@@ -104,10 +114,47 @@
 
         h1{
             
-           position: relative;
-               background: #AEF1F5;
+           font-size:140px;
+            display: inline-block;
+            margin-top: -200px;
+            margin-left: 10px;
+            margin-right: 10px;
+            top: -200px;
+
     
 
+        }
+
+        nav{
+            display: inline-block;
+            top: -171px;
+            margin-bottom: 1px;
+            margin-right: 10px;
+            
+        }
+
+        #java{
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 20px;
+            width: 200px;
+            height: 200px;
+            margin-right: 10px;
+            margin-bottom: 1px;
+        }
+        #c{
+            display: inline-block;
+            border-radius: 20px;
+            width: 200px;
+            height: 200px;
+            margin-left: 1px;
+            margin-top: 1px;
+            margin-right: 10px;
+            border-right: 10px;
+
+        }
+        body{
+            width: 1870px;
         }
         table thead tr th{
             padding:10px;
@@ -144,7 +191,7 @@
             }, 250);
         })  
 
-        $(function(){ 
+    /*    $(function(){ 
     function show_popup(){ 
         
             $("#welcome").animate({
@@ -160,34 +207,34 @@
       
     }; 
     setInterval(show_popup, 500); // 5 seconds 
-});
+});*/
 
         $("#quien").click(function(){
           /*  $("#quienes h2").hide();
             $("#quienes p").hide();*/
-            $("#quienes #QS").hide();
-            $("#quienes #QS").slideToggle(600);
+            $("#quienes .QS").hide();
+            $("#quienes .QS").slideToggle(800);
         });
 
         $("#acerca").click(function(){
             /*$("#quienes h2").hide();
             $("#quienes p").hide();*/
-            $("#quienes #AM").hide();
-            $("#quienes #AM").slideToggle(600);
+            $("#quienes .AM").hide();
+            $("#quienes .AM").slideToggle(800);
         });
 
         $("#noticias").click(function(){
            /* $("#quienes h2").hide();
             $("#quienes p").hide();*/
-            $("#quienes #N").hide();
-            $("#quienes #N").slideToggle(600);
+            $("#quienes .N").hide();
+            $("#quienes .N").slideToggle(800);
         });
 
         $("#contacto").click(function(){
            /* $("#quienes h2").hide();
             $("#quienes p").hide();*/
-            $("#quienes #C").hide();
-            $("#quienes #C").slideToggle(600);
+            $("#quienes .C").hide();
+            $("#quienes .C").slideToggle(800);
         });
 
 
@@ -195,6 +242,8 @@
 
         
 </script>
+
+<img src="IMG/javalogosolo.png" alt="" class="animated infinite bounceIn" id="java">
     <nav>   
 
  <ul>   
@@ -205,9 +254,10 @@
         <li> <a href="#C" id="contacto" class="nav">Contacto</a> </li>
  </ul>
 </nav>
+<img src="IMG/c.png" alt="" class="animated infinite bounceIn" id="c">
 <center>
     <div class="bienvenido">   
-    <h1 id="welcome"> BIENVENIDO<span>&#160;</span></h1>
+    <h1  id="welcome" class="animated infinite tada" > BIENVENIDO<span>&#160;</span></h1>
     </div>
 </center>
 
@@ -218,15 +268,16 @@
 
 </div>
 <!--img src="IMG/hola.gif" id="hola"-->
-<div class="d">
+<div class="d" id="AM">
 <h2 id="AM" class="AM"><center>¿Acerca de mi?</center></h2>
     <p  class="AM">Me gusta programar y aprender diferente lenguajes o formas de programación.<br>Me gusta investigar y conocer sobre nuevas tecnologias y ver presentaciones sobre lo mas nuevo anunciado. <br> Mis pasatiempos favoritos son jugar basketball en las tardes con mis amigos y dibujar. </p>
+</html>
 </div>
-<div class="d">
+<div class="d" id="No">
 <h2 id="N" class="N"><center>¿Noticias?</center></h2>
     <p  class="N">Actualmente me mude a ciudad de mexico  consegui un cuarto barato cerca de parque delta. <br> Las dos primeras semanas estuve enviando curriculums para conseguir mis residencias profesionales. <br> Actualmente consegui dar mis recidencias en ISSIRMAX me queda a 40 minutos caminando de mi departamento y estoy aprendiendo mas sobre desarrollo web.</p>
 </div>
-<div class="d">
+<div class="d" id="Co">
 <h2 id="C" class="C"><center>¿Contacto?</center></h2>
     <p  class="C"> Email:<a href="mailto:rafael.ramosmoreno97@gmail.com">rafael.ramosmoreno97@gmail.com</a> <br> Linkedln: <a href="https://mx.linkedin.com/in/rafael-ramos-moreno-426b12123?trk=people-guest_profile-result-card_result-card_full-click" target="_blank">Rafael Ramos Moreno</a> <br>  
         <img src="IMG/email.gif" id="email"> </p>
@@ -235,4 +286,3 @@
 
 
 </body>
-</html>
