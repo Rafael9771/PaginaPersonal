@@ -5,15 +5,12 @@
     <title>Pagina Personal</title>
     <link rel="stylesheet" href="animate.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="IMG/favicon.ico">
     <script src="jQuery/jQuery1.6.3.js"></script>
 </head>
-<body >
-    
-
+<body>
 <script src="jQuery/jQuery1.6.3.js"></script>
 <script>    
-
-    
 
     $(document).ready(function(){
 
@@ -25,8 +22,6 @@
             }, 250);
         })  
         
-
-
         $("nav ul li a").mouseout(function() {
             $(this).animate({
 
@@ -35,27 +30,7 @@
             }, 250);
         })  
 
-    /*    $(function(){ 
-    function show_popup(){ 
-        
-            $("#welcome").animate({
-
-              opacity:0.5
-
-            }, 500);
-            $("#welcome").animate({
-
-              opacity:1
-
-            }, 500);
-      
-    }; 
-    setInterval(show_popup, 500); // 5 seconds 
-});*/
-
         $("#ini").click(function(){
-          /*  $("#quienes h2").hide();
-            $("#quienes p").hide();*/
 
             $("#ini").css('border-bottom', 'solid 2px red');
             $("#quien").css('border-bottom', 'solid 0px red');
@@ -67,8 +42,6 @@
         });
 
         $("#quien").click(function(){
-          /*  $("#quienes h2").hide();
-            $("#quienes p").hide();*/
 
             $("#ini").css('border-bottom', 'solid 0px red');
             $("#quien").css('border-bottom', 'solid 2px red');
@@ -81,8 +54,6 @@
         });
 
         $("#acerca").click(function(){
-            /*$("#quienes h2").hide();
-            $("#quienes p").hide();*/
 
             $("#ini").css('border-bottom', 'solid 0px red');
             $("#quien").css('border-bottom', 'solid 0px red');
@@ -95,8 +66,6 @@
         });
 
         $("#noticias").click(function(){
-           /* $("#quienes h2").hide();
-            $("#quienes p").hide();*/
 
             $("#ini").css('border-bottom', 'solid 0px red');
             $("#quien").css('border-bottom', 'solid 0px red');
@@ -109,8 +78,7 @@
         });
 
         $("#contacto").click(function(){
-           /* $("#quienes h2").hide();
-            $("#quienes p").hide();*/
+           
             $("#ini").css('border-bottom', 'solid 0px red');
             $("#quien").css('border-bottom', 'solid 0px red');
             $("#acerca").css('border-bottom', 'solid 0px red');
@@ -122,8 +90,7 @@
         });
 
         $("#direccion").click(function(){
-           /* $("#quienes h2").hide();
-            $("#quienes p").hide();*/
+          
             $("#ini").css('border-bottom', 'solid 0px red');
             $("#quien").css('border-bottom', 'solid 0px red');
             $("#acerca").css('border-bottom', 'solid 0px red');
@@ -137,12 +104,10 @@
 
     });  
 
-        
 </script>
 
 
 <a href="https://mx.linkedin.com/in/rafael-ramos-moreno-426b12123?trk=people-guest_profile-result-card_result-card_full-click" target="_blank" > <img src="IMG/LinkedIn.png" alt="Rafael Ramos Moreno" class="animated infinite bounceIn" id="java"> </a>
-    <!--nav id="nav"-->   
 
  <ul>   
         <li> <a href="index.html" id="ini" class="nav">Inicio</a> </li>
@@ -152,54 +117,72 @@
         <li> <a href="#C" id="contacto" class="nav">Contacto</a> </li>
         <li> <a href="#Di" id="direccion" class="nav">Direccion</a> </li>
  </ul>
-<!--/nav-->
+
 <a href="mailto:rafael.ramosmoreno97@gmail.com"> <img src="IMG/gmail.png" alt="gmail" class="animated infinite bounceIn" id="c"> </a>
 <center>
     <div class="bienvenido">   
-    <h1  id="welcome"  align="center"><font color="#FFFFFF" ><marquee  direction="right" loop="20"> BIENVENIDO</marquee></font><span>&#160;</span></h1>
+
+        <h1  id="welcome"  align="center"><font color="#FFFFFF" ><marquee  direction="right" loop="20"> BIENVENIDO</marquee></font><span>&#160;</span></h1>
+
     </div>
 </center>
 
-    <div id="quienes">
+<div id="quienes">
     <div id="q"> 
-<div class="d">   
-<h2 class="QS" id="QS"> <center> ¿Quien soy?</center></h2>
-    <p  class="QS" >Soy un estudiante de ingeniería en sistemas computacionales, actualmente enfocado en desarrollo de software,<br>con ganas de expandir mis conocimientos en esta área. Interesado en aprender nuevos lenguajes y técnicas de programación. </p>
+        <div class="d">   
 
-</div>
+            <h2 class="QS" id="QS"> <center> ¿Quien soy?</center></h2>
+                <p  class="QS" >Soy un estudiante de ingeniería en sistemas computacionales, actualmente enfocado en desarrollo de software,<br>con ganas de expandir mis conocimientos en esta área. Interesado en aprender nuevos lenguajes y técnicas de programación. </p>
+
+        </div>
     </div>
-<img src="IMG/yo.png" id="hola">
-<div class="d" id="AM">
-<h2 id="AMh" class="AM"><center>¿Acerca de mi?</center></h2>
-    <p  class="AM">Me gusta programar y aprender diferente lenguajes o formas de programación.<br>Me gusta investigar y conocer sobre nuevas tecnologias y ver presentaciones sobre lo mas nuevo anunciado. <br> Mis pasatiempos favoritos son jugar basketball en las tardes con mis amigos y dibujar. </p>
-</html>
-</div>
-<div class="d" id="No">
-<h2 id="N" class="N"><center>¿Noticias?</center></h2>
-    <p  class="N">Actualmente me mude a ciudad de mexico  consegui un cuarto barato cerca de parque delta. <br> Las dos primeras semanas estuve enviando curriculums para conseguir mis residencias profesionales. <br> Actualmente consegui dar mis recidencias en ISSIRMAX me queda a 40 minutos caminando de mi departamento y estoy aprendiendo mas sobre desarrollo web.</p>
-</div>
 
-<img src="IMG/LO MAS NUEVO.png" alt="" id="Noi">
+    <img src="IMG/yo.png" id="hola">
+    <div class="d" id="AM">
 
-<div class="d" id="Co">
-<h2 id="C" class="C"><center>¿Contacto?</center></h2>
-    <p  class="C">
-      <a href="https://mx.linkedin.com/in/rafael-ramos-moreno-426b12123?trk=people-guest_profile-result-card_result-card_full-click" target="_blank" border="0"> <img src="IMG/LinkedIn.png" alt="Rafael Ramos Moreno" class="" id="linkedin"> </a>
+        <h2 id="AMh" class="AM"><center>¿Acerca de mi?</center></h2>
+        <p  class="AM">Me gusta programar y aprender diferente lenguajes o formas de programación.<br>Me gusta investigar y conocer sobre nuevas tecnologias y ver presentaciones sobre lo mas nuevo anunciado. <br> Mis pasatiempos favoritos son jugar basketball en las tardes con mis amigos y dibujar. </p>
+
+    </div>
+
+    <div class="d" id="No">
+
+        <h2 id="N" class="N"><center>¿Noticias?</center></h2>
+        <p  class="N">Actualmente me mude a ciudad de mexico  consegui un cuarto barato cerca de parque delta. <br> Las dos primeras semanas estuve enviando curriculums para conseguir mis residencias profesionales. <br> Actualmente consegui dar mis recidencias en ISSIRMAX me queda a 40 minutos caminando de mi departamento y estoy aprendiendo mas sobre desarrollo web.</p>
+    
+    </div>
+
+    <img src="IMG/LO MAS NUEVO.png" alt="" id="Noi">
+
+    <div class="d" id="Co">
+        <h2 id="C" class="C"><center>¿Contacto?</center></h2>
+        
+        <p  class="C">
+        
+        <a href="https://mx.linkedin.com/in/rafael-ramos-moreno-426b12123?trk=people-guest_profile-result-card_result-card_full-click" target="_blank" border="0"> <img src="IMG/LinkedIn.png" alt="Rafael Ramos Moreno" class="" id="linkedin"> </a>
+        
         <a href="https://www.facebook.com/rafael.ramosmoreno" target="_blank"> <img src="IMG/facebook.jpg" alt="Rafael Ramos Moreno" id="face"> </a>
+        
         <a href="mailto:rafael.ramosmoreno97@gmail.com"> <img src="IMG/gmail.png" alt="gmail" class="" id="gmail"> </a>
       
-    </p>
+        </p>
 
     </div>
     <img src="IMG/smartphone-hand-screen-man-technology-white-1201573-pxhere.com.jpg" alt="" id="ICo">
     <img src="IMG/flecha-imagen-animada-0114.gif" alt="" id="FCo">
     
     <div id="Di" class="d">
+    
         <h2 id="dir" class="dir">Dirección</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.383865542704!2d-102.30936878464783!3d19.992397586568778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842e892c9076aeff%3A0xc7c4db3c54ad913!2sUranio+98%2C+Salinas+de+Gortari%2C+59655+Zamora+de+Hidalgo%2C+Mich.!5e0!3m2!1ses-419!2smx!4v1564061817896!5m2!1ses-419!2smx" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    
     </div>
     
 
-    </div>
+</div>
+<div id="footer">
+    <p>Copyright &copy; 2019 Rafael Ramos Moreno - Todos los derechos reservados</p>
+</div>
 
 </body>
+</html>
