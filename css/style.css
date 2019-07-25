@@ -1,0 +1,298 @@
+
+        nav{
+            position:relative;
+            margin:auto;
+            /*width:100%;*/
+            height:auto;
+            background:black;
+            opacity: 0.6;
+            width: 76.5%;
+            border-radius: 20px;
+        }
+
+        #q{
+            position: relative;
+            left: 625px;
+
+        }
+
+        #No{
+            position: relative;
+            left: 700px;
+        }
+
+        #Noi{
+            position: relative;
+            height: 300px;
+            width: 300px;
+            margin-top: -400px;
+            top: -100px;
+            left: 200px;
+        }
+
+        #welcome{
+            position: relative;
+            top:35px;
+            border-bottom: 0px;
+            margin-bottom: 0px;
+            right: 60px; 
+            padding-bottom: 0px;
+
+        }
+        iframe{
+            position: relative;
+            width: 1000px;
+            left: 10px;
+            height: 300px;
+            border-radius: 20px;
+        }
+
+        #ICo{
+            width: 350px;
+            height: 300px;
+            border-radius: 20px;
+            position: relative;
+            border-left: 10px;
+            border-right: 10px;
+            margin-left: 10px;
+            top: -400px;
+            left: 1500px;
+            display: inline-block;
+        }
+        #Di{
+            position: relative;
+            display: inline-block;
+            top: -300px;
+            width: 1020px;
+            height: 380px;
+            left: 400px;
+        }
+
+        #FCo{
+            position: relative;
+            top:-520px;
+            left: 700px;
+            width: 300px;
+        }
+
+        #ini{
+
+            border-bottom: solid 2px red;
+        }
+
+        #hola{
+           position: relative;
+            width: 250px;
+            height: 250px;
+            margin-left: -50px;
+            margin-top: -50px;
+            margin-right: -100px;
+            margin-bottom: -50px;
+            top: -300px;
+            z-index: 50px;
+            left: 255px;
+            border-radius: 20px;
+        }
+        
+        #email{
+            border-radius: 20px;
+        }
+
+        
+
+        a:hover{
+            /*color: #E426E2;*/
+            font-weight: bold;
+            border-bottom: 2px solid #FFF;
+            border-top: 2px solid #FFF;
+            border-left: 2px solid #FFF;
+            border-right: 2px solid #FFF;
+        }
+        .d{
+           /* background-image: url(IMG/divs.jpg);*/
+           display: inline-block;
+           margin-top: 0px;
+            font-family: arial;
+           background-color: #5B1082;
+            background-size: 1000px 250px;
+            border-radius: /*80px*/ 20px;
+            margin-bottom: 100px;
+            margin-right: 1px;
+            font-weight: bold;
+            color: #FFF;
+
+
+        }
+
+        #AM{
+            position: relative;
+            width: 1870px;
+            right: 0px;
+        }
+
+        #Co{
+            position: relative;
+            width: 1000px;
+            background-color: #5B1082;
+            display: inline-block;
+           /*filter: blur(10px); /* Safari 9+ */
+   
+        }
+
+        #Co::before{
+            filter: blur(5px);
+            -webkit-filter: blur(4px);
+    -moz-filter: blur(4px);
+    -ms-filter: blur(4px);
+    -o-filter: blur(4px);
+    filter: blur(4px);
+        }
+         ul{
+            position:fixed;
+            display: inline-block;
+            margin:auto;
+            width:70%;
+            text-align: center;
+            top: 10px;
+            z-index: 100;
+            opacity: 0.6;
+            
+            background: url(../IMG/4k-wallpaper-afterglow-astronomy-clouds-dawn-dusk-1553071-pxhere.com.jpg);
+            -webkit-backdrop-filter: blur(100px); /* Safari 9+ */
+    backdrop-filter: blur(100px);
+            /*filter: blur(6px);*/
+            border-radius: 20px;
+        }
+        li{
+            display:inline-block;
+            width:12%;
+            line-height: 50px;
+            list-style: none;
+            filter: blur(0px);
+
+        }
+         ul li a{
+            color:white;
+            text-decoration: none;
+            padding: 10px;
+            
+        }
+        #quienes {
+            position: relative;
+            display: inline-block;
+            padding: 10px;
+            height: 250px;
+            width: 960px;
+            opacity: 0.6;
+
+            margin-top: -10px;
+            top: -100px;
+        }
+
+       
+
+        
+
+        #quienes p{
+            display: inline-block;
+            padding: 10px;
+            height: 150px;
+            width: 960px;
+
+            
+        }
+
+     /*h1 span {
+            border-radius: 20px;
+    position:absolute;
+    right:0;
+    width:0.1;
+    background: #AEF1F5;
+    border-left: 1px solid #000;
+    animation: escribir 2s steps(30) infinite alternate;
+}*/
+
+        @keyframes escribir {
+            from { width: 100% }
+            to { width:10% }
+        }
+
+        #linkedin{
+            width: 200px;
+            height: 200px;
+        }
+
+        #gmail{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            left: 370px;
+        }
+
+
+
+        #face{
+            position: relative;
+            width: 200px;
+            height: 200px;
+            left: 180px;
+        }
+
+        h1{
+            
+           font-size:140px;
+            display: inline-block;
+            margin-top: -200px;
+            margin-left: 10px;
+            margin-right: 10px;
+            top: -200px;
+
+    
+
+        }
+
+        nav{
+            display: inline-block;
+            top: -171px;
+            margin-bottom: 1px;
+            margin-right: 10px;
+            
+        }
+        
+
+        #java{
+
+            display: inline-block;
+            vertical-align: top;
+            border-radius: 20px;
+            width: 200px;
+            height: 200px;
+            margin-right: 10px;
+            margin-bottom: -10px;
+            border:0px-style: none;
+        }
+        #c{
+            display: inline-block;
+            border-radius: 20px;
+            width: 200px;
+            height: 200px;
+            margin-left: 1px;
+            margin-top: 1px;
+            margin-bottom: -10px;
+            margin-right: 10px;
+            border-right: 10px;
+            left: 1450px;
+            position: relative;
+
+        }
+        body{
+            background: url(../IMG/4k-wallpaper-afterglow-astronomy-clouds-dawn-dusk-1553071-pxhere.com.jpg) no-repeat top center;
+            width: 2030px;
+        }
+        table thead tr th{
+            padding:10px;
+        }
+        table tbody tr td{
+            padding:10px;
+        }
+

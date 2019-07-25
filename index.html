@@ -4,186 +4,11 @@
     <meta charset="UTF-8">
     <title>Pagina Personal</title>
     <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="jQuery/jQuery1.6.3.js"></script>
 </head>
-<body background="IMG/mar.jpg">
-    <style> 
-        nav{
-            position:relative;
-            margin:auto;
-            /*width:100%;*/
-            height:auto;
-            background:black;
-            opacity: 0.6;
-            width: 76.5%;
-            border-radius: 20px;
-        }
-
-        #welcome{
-            
-        }
-
-        #hola{
-            float: right;
-            width: 150px;
-            height: 150px;
-            /*margin-left: 5px;
-            margin-top: 5px;
-            margin-right: 5px;*/
-        }
-        
-        #email{
-            border-radius: 20px;
-        }
-
-        
-
-        a:hover{
-            /*color: #E426E2;*/
-            font-weight: bold;
-        }
-        .d{
-           /* background-image: url(IMG/divs.jpg);*/
-           display: inline-block;
-           margin-top: 1px;
-            font-family: arial;
-           background-color: #4CF2E8;
-            background-size: 1000px 250px;
-            border-radius: 80px 20px;
-            margin-bottom: 100px;
-            margin-right: 1px;
-            font-weight: bold;
-
-
-        }
-
-        #AM{
-            width: 850px;
-        }
-
-        #Co{
-            width: 1000px;
-        }
-        nav ul{
-            position:relative;
-            margin:auto;
-            width:70%;
-            text-align: center;
-        }
-        nav ul li{
-            display:inline-block;
-            width:12%;
-            line-height: 50px;
-            list-style: none;
-        }
-        nav ul li a{
-            color:white;
-            text-decoration: none;
-            opacity: 0.5;
-        }
-        #quienes {
-            display: inline-block;
-            padding: 10px;
-            height: 250px;
-            width: 960px;
-            opacity: 0.6;
-
-            
-            
-        }
-
-       
-
-        
-
-        #quienes p{
-            display: inline-block;
-            padding: 10px;
-            height: 150px       ;
-            width: 960px;
-            
-            
-        }
-
-     /*h1 span {
-            border-radius: 20px;
-    position:absolute;
-    right:0;
-    width:0.1;
-    background: #AEF1F5;
-    border-left: 1px solid #000;
-    animation: escribir 2s steps(30) infinite alternate;
-}*/
-
-        @keyframes escribir {
-            from { width: 100% }
-            to { width:10% }
-        }
-
-        #linkedin{
-            width: 200px;
-            height: 200px;
-        }
-
-        #gmail{
-            width: 200px;
-            height: 200px;
-        }
-
-        h1{
-            
-           font-size:140px;
-            display: inline-block;
-            margin-top: -200px;
-            margin-left: 10px;
-            margin-right: 10px;
-            top: -200px;
-
+<body >
     
-
-        }
-
-        nav{
-            display: inline-block;
-            top: -171px;
-            margin-bottom: 1px;
-            margin-right: 10px;
-            
-        }
-
-        #java{
-            display: inline-block;
-            vertical-align: top;
-            border-radius: 20px;
-            width: 200px;
-            height: 200px;
-            margin-right: 10px;
-            margin-bottom: 1px;
-        }
-        #c{
-            display: inline-block;
-            border-radius: 20px;
-            width: 200px;
-            height: 200px;
-            margin-left: 1px;
-            margin-top: 1px;
-            margin-right: 10px;
-            border-right: 10px;
-
-        }
-        body{
-
-            width: 1870px;
-        }
-        table thead tr th{
-            padding:10px;
-        }
-        table tbody tr td{
-            padding:10px;
-        }
-
-
-</style>
 
 <script src="jQuery/jQuery1.6.3.js"></script>
 <script>    
@@ -228,9 +53,29 @@
     setInterval(show_popup, 500); // 5 seconds 
 });*/
 
+        $("#ini").click(function(){
+          /*  $("#quienes h2").hide();
+            $("#quienes p").hide();*/
+
+            $("#ini").css('border-bottom', 'solid 2px red');
+            $("#quien").css('border-bottom', 'solid 0px red');
+            $("#acerca").css('border-bottom', 'solid 0px red');
+            $("#noticias").css('border-bottom', 'solid 0px red');
+            $("#contacto").css('border-bottom', 'solid 0px red');
+            $("#direccion").css('border-bottom', 'solid 0px red');
+            
+        });
+
         $("#quien").click(function(){
           /*  $("#quienes h2").hide();
             $("#quienes p").hide();*/
+
+            $("#ini").css('border-bottom', 'solid 0px red');
+            $("#quien").css('border-bottom', 'solid 2px red');
+            $("#acerca").css('border-bottom', 'solid 0px red');
+            $("#noticias").css('border-bottom', 'solid 0px red');
+            $("#contacto").css('border-bottom', 'solid 0px red');
+            $("#direccion").css('border-bottom', 'solid 0px red');
             $("#quienes .QS").hide();
             $("#quienes .QS").slideToggle(800);
         });
@@ -238,6 +83,13 @@
         $("#acerca").click(function(){
             /*$("#quienes h2").hide();
             $("#quienes p").hide();*/
+
+            $("#ini").css('border-bottom', 'solid 0px red');
+            $("#quien").css('border-bottom', 'solid 0px red');
+            $("#acerca").css('border-bottom', 'solid 2px red');
+            $("#noticias").css('border-bottom', 'solid 0px red');
+            $("#contacto").css('border-bottom', 'solid 0px red');
+            $("#direccion").css('border-bottom', 'solid 0px red');
             $("#quienes .AM").hide();
             $("#quienes .AM").slideToggle(800);
         });
@@ -245,6 +97,13 @@
         $("#noticias").click(function(){
            /* $("#quienes h2").hide();
             $("#quienes p").hide();*/
+
+            $("#ini").css('border-bottom', 'solid 0px red');
+            $("#quien").css('border-bottom', 'solid 0px red');
+            $("#acerca").css('border-bottom', 'solid 0px red');
+            $("#noticias").css('border-bottom', 'solid 2px red');
+            $("#contacto").css('border-bottom', 'solid 0px red');
+            $("#direccion").css('border-bottom', 'solid 0px red');
             $("#quienes .N").hide();
             $("#quienes .N").slideToggle(800);
         });
@@ -252,8 +111,27 @@
         $("#contacto").click(function(){
            /* $("#quienes h2").hide();
             $("#quienes p").hide();*/
+            $("#ini").css('border-bottom', 'solid 0px red');
+            $("#quien").css('border-bottom', 'solid 0px red');
+            $("#acerca").css('border-bottom', 'solid 0px red');
+            $("#noticias").css('border-bottom', 'solid 0px red');
+            $("#contacto").css('border-bottom', 'solid 2px red');
+            $("#direccion").css('border-bottom', 'solid 0px red');
             $("#quienes .C").hide();
             $("#quienes .C").slideToggle(800);
+        });
+
+        $("#direccion").click(function(){
+           /* $("#quienes h2").hide();
+            $("#quienes p").hide();*/
+            $("#ini").css('border-bottom', 'solid 0px red');
+            $("#quien").css('border-bottom', 'solid 0px red');
+            $("#acerca").css('border-bottom', 'solid 0px red');
+            $("#noticias").css('border-bottom', 'solid 0px red');
+            $("#contacto").css('border-bottom', 'solid 0px red');
+            $("#direccion").css('border-bottom', 'solid 2px red');
+            $("#quienes #Di").hide();
+            $("#quienes #Di").slideToggle(800);
         });
 
 
@@ -262,33 +140,37 @@
         
 </script>
 
-<img src="IMG/javalogosolo.png" alt="" class="animated infinite bounceIn" id="java">
-    <nav id="nav">   
+
+<a href="https://mx.linkedin.com/in/rafael-ramos-moreno-426b12123?trk=people-guest_profile-result-card_result-card_full-click" target="_blank" > <img src="IMG/LinkedIn.png" alt="Rafael Ramos Moreno" class="animated infinite bounceIn" id="java"> </a>
+    <!--nav id="nav"-->   
 
  <ul>   
         <li> <a href="index.html" id="ini" class="nav">Inicio</a> </li>
-        <li> <a href="#QS" id="quien" class="nav">¿Quien soy?</a> </li>
+        <li> <a href="#q" id="quien" class="nav">¿Quien soy?</a> </li>
         <li> <a href="#AM" id="acerca" class="nav">Acerca de</a> </li>
         <li> <a href="#N" id="noticias" class="nav">Noticias</a> </li>
         <li> <a href="#C" id="contacto" class="nav">Contacto</a> </li>
+        <li> <a href="#Di" id="direccion" class="nav">Direccion</a> </li>
  </ul>
-</nav>
-<img src="IMG/c.png" alt="" class="animated infinite bounceIn" id="c">
+<!--/nav-->
+<a href="mailto:rafael.ramosmoreno97@gmail.com"> <img src="IMG/gmail.png" alt="gmail" class="animated infinite bounceIn" id="c"> </a>
 <center>
     <div class="bienvenido">   
-    <h1  id="welcome" class="animated infinite tada" > BIENVENIDO<span>&#160;</span></h1>
+    <h1  id="welcome"  align="center"><font color="#FFFFFF" ><marquee  direction="right" loop="20"> BIENVENIDO</marquee></font><span>&#160;</span></h1>
     </div>
 </center>
 
-    <div id="quienes"> 
+    <div id="quienes">
+    <div id="q"> 
 <div class="d">   
 <h2 class="QS" id="QS"> <center> ¿Quien soy?</center></h2>
     <p  class="QS" >Soy un estudiante de ingeniería en sistemas computacionales, actualmente enfocado en desarrollo de software,<br>con ganas de expandir mis conocimientos en esta área. Interesado en aprender nuevos lenguajes y técnicas de programación. </p>
 
 </div>
-<!--img src="IMG/hola.gif" id="hola"-->
+    </div>
+<img src="IMG/yo.png" id="hola">
 <div class="d" id="AM">
-<h2 id="AM" class="AM"><center>¿Acerca de mi?</center></h2>
+<h2 id="AMh" class="AM"><center>¿Acerca de mi?</center></h2>
     <p  class="AM">Me gusta programar y aprender diferente lenguajes o formas de programación.<br>Me gusta investigar y conocer sobre nuevas tecnologias y ver presentaciones sobre lo mas nuevo anunciado. <br> Mis pasatiempos favoritos son jugar basketball en las tardes con mis amigos y dibujar. </p>
 </html>
 </div>
@@ -296,13 +178,28 @@
 <h2 id="N" class="N"><center>¿Noticias?</center></h2>
     <p  class="N">Actualmente me mude a ciudad de mexico  consegui un cuarto barato cerca de parque delta. <br> Las dos primeras semanas estuve enviando curriculums para conseguir mis residencias profesionales. <br> Actualmente consegui dar mis recidencias en ISSIRMAX me queda a 40 minutos caminando de mi departamento y estoy aprendiendo mas sobre desarrollo web.</p>
 </div>
+
+<img src="IMG/LO MAS NUEVO.png" alt="" id="Noi">
+
 <div class="d" id="Co">
 <h2 id="C" class="C"><center>¿Contacto?</center></h2>
     <p  class="C">
-        <a href="mailto:rafael.ramosmoreno97@gmail.com"> <img src="IMG/gmail.png" alt="gmail" id="gmail"> </a>
-        <a href="https://mx.linkedin.com/in/rafael-ramos-moreno-426b12123?trk=people-guest_profile-result-card_result-card_full-click" target="_blank"> <img src="IMG/LinkedIn.png" alt="Rafael Ramos Moreno" id="linkedin"> </a>
+      <a href="https://mx.linkedin.com/in/rafael-ramos-moreno-426b12123?trk=people-guest_profile-result-card_result-card_full-click" target="_blank" border="0"> <img src="IMG/LinkedIn.png" alt="Rafael Ramos Moreno" class="" id="linkedin"> </a>
+        <a href="https://www.facebook.com/rafael.ramosmoreno" target="_blank"> <img src="IMG/facebook.jpg" alt="Rafael Ramos Moreno" id="face"> </a>
+        <a href="mailto:rafael.ramosmoreno97@gmail.com"> <img src="IMG/gmail.png" alt="gmail" class="" id="gmail"> </a>
+      
     </p>
+
     </div>
+    <img src="IMG/smartphone-hand-screen-man-technology-white-1201573-pxhere.com.jpg" alt="" id="ICo">
+    <img src="IMG/flecha-imagen-animada-0114.gif" alt="" id="FCo">
+    
+    <div id="Di" class="d">
+        <h2 id="dir" class="dir">Dirección</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3749.383865542704!2d-102.30936878464783!3d19.992397586568778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842e892c9076aeff%3A0xc7c4db3c54ad913!2sUranio+98%2C+Salinas+de+Gortari%2C+59655+Zamora+de+Hidalgo%2C+Mich.!5e0!3m2!1ses-419!2smx!4v1564061817896!5m2!1ses-419!2smx" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    
+
     </div>
 
 </body>
