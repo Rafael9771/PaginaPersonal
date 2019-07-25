@@ -51,7 +51,7 @@
         }
 
         #welcome{
-            position: relative; top:35px; border-bottom: 0px; margin-bottom: 0px; right: 60px;  padding-bottom: 0px;
+            position: relative; top:35px; border-bottom: 0px; margin-bottom: 0px; left: 450px;  padding-bottom: 0px; color: white;
         }
         
         #ICo{
@@ -73,7 +73,7 @@
 
         #hola{
             position: relative; width: 250px; height: 250px; margin-left: -50px; margin-top: -50px; margin-right: -100px;
-            margin-bottom: -50px; top: -300px; z-index: 50px; left: 255px; border-radius: 20px;
+            margin-bottom: -50px; top: -300px; z-index: 50; left: 255px; border-radius: 20px;
         }
         
         #email{
@@ -112,7 +112,7 @@
 
         #java{
             display: inline-block; vertical-align: top; border-radius: 20px; width: 200px; height: 200px; margin-right: 10px;
-            margin-bottom: -10px; border:0px-style: none;
+            margin-bottom: -10px;
         }
 
         #c{
@@ -125,6 +125,27 @@
             background: #CCC; text-align: center; position: relative; margin-top: 0px; height: 50px;
         }
 
+        #QS{
+            text-align: center;
+
+        }
+
         #quienes p{
             display: inline-block; padding: 10px; height: 150px; width: 960px;
+        }
+
+        #AMh{
+            text-align: center;
+        }
+
+        #N{
+            text-align: center;
+        }
+
+        #C{
+            text-align: center;
+        }
+
+        #dir{
+            text-align: center;
         }
